@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col s12">
+        <div class="card grey lighten-5">
+            <div class="card-content">
+                <span class="card-title grey-text">Stage 1C: Stage Title</span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-field="id">Earnings Report</th>
+                            <th></th>
+                            <th data-field="status" class="center">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in stageOneLists">
+                            <td>{{item.name}}</td>
+                            <td>
+                                <a class="col s12  btn {{item.status ? 'disabled' : 'waves-effect waves-light blue'}}"> {{item.status ? 'completed' : 'upload'}}</a>
+                            </td>
+                            <td class="center"><i class="material-icons {{item.status ? 'green-text' : 'red-text'}}">{{item.status ? 'check' : 'close'}}</i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-action right-align">
+                <span class="waves-effect waves-light btn-flat blue-text" ng-click="refreshStageOne()">Refresh</span>
+                <span class="waves-effect waves-light btn-flat blue-text"  ng-click="changeStageOne('1c','c')">Next</span>
+            </div>
+        </div>
+    </div>
+</div>
