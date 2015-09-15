@@ -1,0 +1,16 @@
+.drawer {
+	z-index: 0;
+	margin-top: 64px;
+	.profile {
+		cursor: default;
+		@extend .grey, .lighten-2; 
+		&:hover {
+			background-color: transparent;			
+		}
+
+		.profile-bg {
+			height: 200px;
+
+		}
+	}
+}

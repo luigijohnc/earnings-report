@@ -1,0 +1,23 @@
+.brand-logo {
+	padding-left: 15px!important;
+	@extend .grey-text ;
+}
+
+.appbar-icons {
+	padding-right: 15px;
+
+	li {
+		
+		&:hover{
+			background-color: transparent;
+		}
+	}
+	a {
+		@extend .grey-text;
+		@include transition(color .3s ease);
+		padding: 0 5px;
+		&:hover {
+			@extend .grey-text, .text-darken-1;
+		}
+	}
+}
