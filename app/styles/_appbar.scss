@@ -16,7 +16,7 @@
 		@include transition(color .3s ease);
 		padding: 0 5px;
 		&:hover {
-			@extend .grey-text, .text-darken-1;
+			@extend .blue-text;
 		}
 	}
 }
